@@ -17,7 +17,7 @@
 <main> 
 <div class="wrapper"> 
     <div class="grid"> 
-<img src="../images/img_2020_1.optim (2).jpg" id="aboutme"> 
+<img src="../home/images/img_2020_1.optim (2).jpg" id="aboutme"> 
 <div id="details"> 
 <h3> I'm a Web Developer, who's constantly evolving. </h3>
 <p> 
