@@ -24,14 +24,7 @@ html {
     margin: $margin;
 }
 
-header {
-    margin-top: 0;
-    background: $primary_color;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: $padding;
-    font-family: $font_family_2;
-}
+
 
 main {
     display: block;
@@ -48,9 +41,7 @@ h1 {
 
 }
 
-h1#header {
-    text-transform: uppercase;
-}
+
 
 h2,
 h3 {
@@ -58,32 +49,6 @@ h3 {
     font-weight: lighter;
 }
 
-nav {
-    ul {
-        margin-left: 16.75px;
-        padding-left: 15px;
-        align-items: center;
-
-    }
-    li.nav {
-
-        display: inline-block;
-        background: $accent_color_3;
-    
-    }
-    
-    li.nav:hover {
-        background: $accent_color_3;
-        color: $accent_color_2;
-    }
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 15px;
-        padding: $padding;
-    
-    }
-}
 p {
     margin-left: $margin-left;
 }
@@ -93,16 +58,16 @@ li.skills {
 
 }
 
-img { 
-    margin: 0 auto; 
-    border: 5px double $accent_color_2; 
-    filter: drop-shadow(10px 5px 15px black);  
+img.about {
+    margin: 0 auto;
+    border: 5px double $accent_color_2;
+    filter: drop-shadow(10px 5px 15px black);
 }
-footer {
-    padding: 10px;
-    background: $primary_color;
-    color: $accent_color_2;
+
+img.images {
+    filter: none;
 }
+
 a#credit {
     font-size: 12px;
 }
@@ -113,53 +78,30 @@ a#credit {
     height: auto;
 }
 
+
 /* This is for large screen view */
 @media only screen and (min-width: 900px) {
     html {
         margin: 0 auto;
     }
 
-    header {
-
-        margin-top: 0;
-        background: $primary_color;
-        padding: 30px;
-    }
-
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-        justify-items: center;
-        align-items: center;
-    }
-
     main {
         background: none;
-        padding: 0; 
+        padding: 0;
     }
 
-
-
-
-    h1#header {
-        grid-column: 1/4;
-        color: $secondary_color;
-        text-align: left;
-        font-size: 45px;
-
+    h3 {
+        margin-top: 0;
     }
-    h3 { 
-        margin-top: 0; 
-    }
+
     nav {
         grid-column: 4/6;
     }
 
-   
-    img { 
-        border: 5px double #CAE7DF; 
-        filter: drop-shadow(10px 5px 15px black);  
+
+    img.about {
+        border: 5px double #CAE7DF;
+        filter: drop-shadow(10px 5px 15px black);
     }
 
     div .grid {
@@ -171,7 +113,7 @@ a#credit {
 
     div#details {
         grid-column: 3/5;
-        margin-left: 30px; 
+        margin-left: 30px;
         background-blend-mode: lighten;
 
     }
@@ -226,17 +168,5 @@ a#credit {
         }
     }
 
-    footer {
-        padding: 30px;
-        margin-right: 0;
-    }
-    footer { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer { 
-        grid-column: 1/4;
-    }
+
 }
