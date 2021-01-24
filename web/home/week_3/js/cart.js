@@ -1,20 +1,39 @@
 //increment the quantity of the products 
 
-let btnAdd = document.querySelector('#add');
-let btnMinus = document.querySelector('#minus');
-let input = document.querySelector('#input');
+//btnAdd = document.querySelector('#add');
+//btnMinus = document.querySelector('#minus');
+//input = document.querySelector('#pId');
+//variable for grabbing the add to cart button element 
+addbutton = document.querySelector('#addme'); 
+/*
+//btnAdd.addEventListener('click', () => {
+ //   pId.value = parseInt(pId.value) + 1;
 
-btnAdd.addEventListener('click', () => {
-    input.value = parseInt(input.value) + 1; 
-
-})
+//})
 
 btnMinus.addEventListener('click', () => {
-    if(input.value > 1){
-    input.value = parseInt(input.value) - 1; 
-    }else { 
-        input.value = 0 ; 
+    if (pId.value > 1) {
+        pId.value = parseInt(pId.value) - 1;
+    } else {
+        pId.value = 0;
     }
-})  
-   
+})
+
+*/
+function addtocart(){ 
+
     
+addbutton.addEventListener('click', () => { 
+
+    alert("THIS IS THE add to cart function"); 
+
+
+}); 
+
+}
+
+
+
+
+
+

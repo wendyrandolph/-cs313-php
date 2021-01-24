@@ -5,10 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Week 3 Team Activity</title>
-  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen"  >
+  <link rel="stylesheet" type="text/css" href="/css/nav.css" media="screen"  >
 </head>
 
 <body>
+    <header> 
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/header.php'; ?>
+    <nav> 
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/nav.php'; ?>
+</nav>
+    </header>
+    <main> 
   <form action="./form.php" method="POST">
     <label for="name">Name</label>
     <input type="text" name="name" id="name"><br>
@@ -52,6 +60,12 @@
 
     <input type="submit">
   </form>
+</main> 
+  <footer> 
+  <div class="footer"> 
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/footer.php'; ?>
+</div> 
+  </footer>
 </body>
 
 </html>

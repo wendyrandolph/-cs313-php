@@ -1,6 +1,3 @@
-<?php
-session_start(); 
-?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -12,23 +9,55 @@ session_start();
 </head>
 
 <body>
-    <form action="/web/home/week_3/checkout/index.php" method="post">
-        <label>First Name:</label><br>
-        <input type="text" name="clientFirstname" class="input" id="clientFirstName" <?php if (isset($clientFirstname)) {
-                                                                                            echo "value='$clientFirstname'";
-                                                                                        }  ?> required><br><br>
-        <label>Last name:</label><br>
-        <input type="text" class="input" name="clientLastname" <?php if (isset($clientLastname)) {
-                                                                    echo "value='$clientLastname'";
-                                                                } ?> required><br><br>
-        <label>Email:</label><br>
-        <input type="email" class="input" name="clientEmail" <?php if (isset($clientEmail)) {
-                                                                    echo "value='$clientEmail'";
-                                                                } ?> required><br><br>
-        <input type="password" class="input" name="clientPassword" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br><br>
-        <input type="submit" value="Checkout" class="checkout"><br><br>
-        <!--Add the action name - value pair -->
-        <input type="hidden" name="action" value="checkout">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CheckOut</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen"  >
+  <link rel="stylesheet" type="text/css" href="/css/nav.css" media="screen"  >
+  <link rel="stylesheet" type="text/css" href="/css/week_3.css" media="screen" />
+</head>
+</head>
+
+<body>
+<header class="header">
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/header.php'; ?>
+    <nav>
+      <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/nav.php'; ?>
+    </nav>
+  </header>
+
+    <main class="browse">
+  <form action="/week_3/view/confirm.php" method="POST">
+    <label for="lastName">First Name:</label>
+    <input type="text" name="firstName" id="firstName"><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="lastName" id="lastName"><br>
+    
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"><br>
+    <label for="address">Mailing Address:</label>
+    <input type="text" name="address" id="address"><br>
+
+    <p>Invoice</p>
+
+
+    
+    <input type="submit" value="Confirm">
+    <input type="hidden" name="action" value="confirm"> 
+  </form>
+</main> 
+  <footer> 
+  <div class="footer"> 
+  <?php require '/cs313-php/web/home/snippets/footer.php'; ?>
+</div> 
+  </footer>
+</body>
+
+</html>
 
 
 
