@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="../home/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" media="screen" />
 </head>
 <body>
     
@@ -17,7 +18,7 @@
 <main> 
 <div class="wrapper"> 
     <div class="grid"> 
-<img src="../home/images/img_2020_1.optim (2).jpg" id="aboutme"> 
+<img class="about" src="./images/img_2020_1.optim (2).jpg" id="aboutme"> 
 <div id="details"> 
 <h3> I'm a Web Developer, who's constantly evolving. </h3>
 <p> 
@@ -48,9 +49,9 @@ Anticipated graduation date:  April 2022.
 
 </main>
 <footer> 
-    <div class="footer"> 
-    <?php require '../home/snippets/footer.php'; ?> 
-</div> 
+    <div class="footer">
+    <?php require $_SERVER['DOCUMENT_ROOT'].'/snippets/footer.php'; ?> 
+    </div>
 </footer>
 </body>
 </html>
