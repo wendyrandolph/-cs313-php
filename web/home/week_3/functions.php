@@ -9,7 +9,7 @@ function generateView($results, $images)
 
         //$image =  $_SESSION['image'];
         $view .= '<div>';
-        $view .= "<form action='/week_3/index.php?action=addToCart&pId=$item[pId]&title=$item[title]&image=$item[image] method=POST>";
+        $view .= "<form action='/web/home/week_3/index.php?action=addToCart&pId=$item[pId]&title=$item[title]&image=$item[image] method=POST>";
         $view .= "<div  class=item name=id value=$item[id]>";
         $view .= "<input type='hidden' name=id value=$item[id]>";
         $view .= '<div class=image >';

@@ -6,24 +6,24 @@
     <title>Shopping Cart</title>
     <script src="https://kit.fontawesome.com/0e472b3e20.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/nav.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/week_3.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/web/home/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/web/home/css/nav.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/web/home/css/week_3.css" media="screen" />
 </head>
 
 <body>
     <header class="header">
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/header.php'; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . './web/home/snippets/header.php'; ?>
         <nav>
-            <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/nav.php'; ?>
+            <?php require $_SERVER['DOCUMENT_ROOT'] . './web/home/snippets/nav.php'; ?>
         </nav>
     </header>
     <div class="page-title">
         <h2> BROWSE PRODUCTS </h2>
         <nav class="cart"> 
         <ul>
-            <li><a href='/week_3/index.php'>Home</a></li>
-            <li><a href='/week_3/index.php?action=viewCart'>View Cart</a></li>
+            <li><a href='/web/home/week_3/view/cart.php'>Home</a></li>
+            <li><a href='/web/home/week_3/view/cart.php'>View Cart</a></li>
             <ul>
                 </nav>
     </div>
@@ -52,7 +52,7 @@
     </main>
     <footer>
         <div class"footer">
-            <?php require '../snippets/footer.php'; ?>
+            <?php require './web/home/snippets/footer.php';  ?>
         </div>
 
 </body>

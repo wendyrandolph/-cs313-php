@@ -16,22 +16,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CheckOut</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" media="screen"  >
-  <link rel="stylesheet" type="text/css" href="/css/nav.css" media="screen"  >
-  <link rel="stylesheet" type="text/css" href="/css/week_3.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" media="screen"  >
+  <link rel="stylesheet" type="text/css" href="../css/nav.css" media="screen"  >
+  <link rel="stylesheet" type="text/css" href="../css/week_3.css" media="screen" />
 </head>
 </head>
 
 <body>
 <header class="header">
-    <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/header.php'; ?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/web/home/snippets/header.php'; ?>
     <nav>
-      <?php require $_SERVER['DOCUMENT_ROOT'] . '/snippets/nav.php'; ?>
+      <?php require $_SERVER['DOCUMENT_ROOT'] . '/web/home/snippets/nav.php'; ?>
     </nav>
   </header>
 
     <main class="browse">
-  <form action="/week_3/view/confirm.php" method="POST">
+  <form action="/web/home/week_3/view/confirm.php" method="POST">
     <label for="lastName">First Name:</label>
     <input type="text" name="firstName" id="firstName"><br>
     <label for="lastName">Last Name:</label>
@@ -52,7 +52,7 @@
 </main> 
   <footer> 
   <div class="footer"> 
-  <?php require '/cs313-php/web/home/snippets/footer.php'; ?>
+  <?php require $_SERVER['DOCUMENT_ROOT'] . '/web/home/snippets/footer.php'; ?>
 </div> 
   </footer>
 </body>

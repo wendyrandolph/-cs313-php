@@ -1,6 +1,6 @@
 <?php
 // Create or access a Session
-session_start();
+//session_start();
 
 //Check if cart has been initialized yet 
 if (!(isset($_SESSION['cart']))) {
@@ -16,7 +16,7 @@ if ($action == NULL) {
 }
 
 //grab php functions as needed *****************************************************
-include '../week_3/functions.php';
+require '../week_3/functions.php';
 
 
 
@@ -283,7 +283,7 @@ switch ($action) {
 
     default:
         $results = $_SESSION['results'];
-        $view = generateView($results, $images);
+        //$view = generateView($results, $images);
 
 
 
