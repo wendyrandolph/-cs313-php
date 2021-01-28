@@ -291,3 +291,4 @@ switch ($action) {
         include '/web/home/week_3/view/browse.php';
         break;
 }
+?>
