@@ -1,10 +1,6 @@
 <?php
 // Create or access a Session
-<<<<<<< HEAD
 //session_start();
-=======
-session_start();
->>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
 
 //Check if cart has been initialized yet 
 if (!(isset($_SESSION['cart']))) {
@@ -20,11 +16,7 @@ if ($action == NULL) {
 }
 
 //grab php functions as needed *****************************************************
-<<<<<<< HEAD
 require '../week_3/functions.php';
-=======
-include '../week_3/functions.php';
->>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
 
 
 
@@ -282,11 +274,7 @@ switch ($action) {
             if(isset($_SESSION['confirm'])){ 
                 $_SESSION['mess_confirm'] = "Your order has been submitted"; 
             }
-<<<<<<< HEAD
             include '/web/home/week_3/view/confirm.php'; 
-=======
-            include '../week_3/view/confirm.php'; 
->>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
 
 
         //******************************************************************
@@ -295,19 +283,11 @@ switch ($action) {
 
     default:
         $results = $_SESSION['results'];
-<<<<<<< HEAD
         //$view = generateView($results, $images);
-=======
-        $view = generateView($results, $images);
->>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
 
 
 
 
-<<<<<<< HEAD
         include '/web/home/week_3/view/browse.php';
-=======
-        include '../week_3/view/browse.php';
->>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
         break;
 }

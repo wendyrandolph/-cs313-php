@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Me</title>
-<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/web/home/week_2/styles.css" media="screen" />
-=======
-    <link rel="stylesheet" type="text/css" href="../week_2/styles.css" media="screen" />
->>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
     
       </script> 
