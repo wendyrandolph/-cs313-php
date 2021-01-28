@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="/web/home/css/styles.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/web/home/css/nav.css" media="screen" />
 </head>
@@ -14,6 +15,18 @@
         <nav>
             <?php require $_SERVER['DOCUMENT_ROOT'] . './web/home/snippets/nav.php'; ?>
         </nav>
+=======
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" media="screen" />
+</head>
+<body>
+    
+<header id="page_header">
+        <?php require '../home/snippets/header.php'; ?>
+        <nav> 
+<?php require '../home/snippets/nav.php'; ?> 
+</nav> 
+>>>>>>> be8a9df25589673b3eea32f408885fdd26d05ffb
     </header>
 <main> 
 <div class="wrapper"> 
