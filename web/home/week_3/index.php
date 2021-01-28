@@ -274,7 +274,7 @@ switch ($action) {
             if(isset($_SESSION['confirm'])){ 
                 $_SESSION['mess_confirm'] = "Your order has been submitted"; 
             }
-            include '../week_3/view/confirm.php'; 
+            include '/web/home/week_3/view/confirm.php'; 
 
 
         //******************************************************************
@@ -288,6 +288,6 @@ switch ($action) {
 
 
 
-        include '../week_3/view/browse.php';
+        include '/web/home/week_3/view/browse.php';
         break;
 }
